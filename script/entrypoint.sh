@@ -6,10 +6,10 @@ TRY_LOOP="20"
 : "${REDIS_PORT:="6379"}"
 : "${REDIS_PASSWORD:=""}"
 
-: "${MYSQL_HOST:="airflow.cpzddhbjekdf.us-east-2.rds.amazonaws.com"}"
+: "${MYSQL_HOST:="airflow-backend-mysql.cpzddhbjekdf.us-east-2.rds.amazonaws.com"}"
 : "${MYSQL_PORT:="3306"}"
 : "${MYSQL_USER:="rhea"}"
-: "${MYSQL_PASSWORD:="E2TZ*4dd7soMncLWmk_!"}"
+: "${MYSQL_PASSWORD:="A!rflow!"}"
 : "${MYSQL_DB:="airflow"}"
 
 # Defaults and back-compat
