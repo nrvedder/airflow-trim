@@ -16,7 +16,7 @@ aws ecr get-login --region us-east-2
 
 git clone https://github.com/nrvedder/airflow-trim.git
 
-sudo yum install mysql mysql-server -y
+sudo yum install mysql -y
 
 
 # Install docker-compose
@@ -25,7 +25,7 @@ sudo curl -L https://github.com/docker/compose/releases/download/1.21.0/docker-c
 
 sudo chmod +x /usr/local/bin/docker-compose
 
-ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+#ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
 # Start docker-compose
 sudo docker-compose -f docker-compose.yml up -d

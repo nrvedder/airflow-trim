@@ -5,7 +5,7 @@ services:
         # command: redis-server --requirepass redispass
 
     webserver:
-        image: 337997143494.dkr.ecr.us-east-2.amazonaws.com/airflow
+        image: 781483816640.dkr.ecr.us-east-2.amazonaws.com/airflow-trim:latest
         restart: always
         depends_on:
             - redis
@@ -31,7 +31,7 @@ services:
             retries: 3
 
     flower:
-        image: 337997143494.dkr.ecr.us-east-2.amazonaws.com/airflow
+        image: 781483816640.dkr.ecr.us-east-2.amazonaws.com/airflow-trim:latest
         restart: always
         depends_on:
             - redis
@@ -43,7 +43,7 @@ services:
         command: flower
 
     scheduler:
-        image: 337997143494.dkr.ecr.us-east-2.amazonaws.com/airflow
+        image: 781483816640.dkr.ecr.us-east-2.amazonaws.com/airflow-trim:latest
         restart: always
         depends_on:
             - webserver
@@ -62,7 +62,7 @@ services:
         command: scheduler
 
     worker:
-        image: 337997143494.dkr.ecr.us-east-2.amazonaws.com/airflow
+        image: 781483816640.dkr.ecr.us-east-2.amazonaws.com/airflow-trim:latest
         restart: always
         depends_on:
             - scheduler
